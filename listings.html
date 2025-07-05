@@ -1,0 +1,162 @@
+<!-- listings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PG & Hostel Listings | Hostlyf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f97316;
+    }
+
+    .navbar a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: #f97316;
+    }
+
+    .filter-bar {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .filter-bar select {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .listings {
+      padding: 2rem;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .listing-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
+    }
+
+    .listing-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .listing-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .listing-card h3 {
+      margin: 0.8rem 0 0.4rem;
+      color: #f97316;
+    }
+
+    .listing-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
+      background: #f97316;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .btn:hover {
+      background: #ea580c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Hostlyf</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="compare.html">Compare</a>
+      <a href="user-dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Filter Section -->
+  <section class="filter-bar">
+    <select>
+      <option value="">Select City</option>
+      <option value="delhi">Delhi</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="bangalore">Bangalore</option>
+    </select>
+    <select>
+      <option value="">Max Price</option>
+      <option value="3000">₹3000</option>
+      <option value="5000">₹5000</option>
+      <option value="7000">₹7000</option>
+    </select>
+    <select>
+      <option value="">Ratings</option>
+      <option value="4">4+ Stars</option>
+      <option value="3">3+ Stars</option>
+    </select>
+  </section>
+
+  <!-- Listings Section -->
+  <section class="listings">
+    <div class="listing-card">
+      <img src="https://5.imimg.com/data5/FO/AX/OF/SELLER-49282358/images-12--500x500.jpg" alt="PG Image">
+      <h3>Sunshine Boys Hostel</h3>
+      <p>Near XYZ College • ₹4500/month • 4.2⭐</p>
+      <a href="pg-details.html" class="btn">View Details</a>
+    </div>
+
+    <div class="listing-card">
+      <img src="https://i.pinimg.com/736x/52/87/4f/52874f03229f2a195addd12cf753cab4.jpg" alt="PG Image">
+      <h3>Comfort Girls PG</h3>
+      <p>Near ABC College • ₹3800/month • 4.5⭐</p>
+      <a href="pg-details.html" class="btn">View Details</a>
+    </div>
+
+    <!-- More listing cards... -->
+  </section>
+
+</body>
+</html>
